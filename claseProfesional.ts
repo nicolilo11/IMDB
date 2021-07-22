@@ -13,6 +13,8 @@ export class Professional
     public oscarsNumber: number;
     public profession: string;
 
+    ///////////// EL QUE LEE SE *****
+
     constructor(name: string, age: number, gender: string,
         weight: number, height: number, hairColor: string, 
         eyeColor: string, race: string, isRetired: boolean,
