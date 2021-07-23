@@ -8,7 +8,6 @@ export class Professional
     public height: number;
     public hairColor: string;
     public eyeColor: string;
-    public race: string;
     public isRetired: boolean;
     public nationality: string;
     public oscarsNumber: number;
@@ -16,7 +15,7 @@ export class Professional
     public firstProject: string;
     public lastProject: string;
     public currentlyResidesIn : string;
-    public numberOfProductions: number;
+    public numberOfFilmographys: number;
     public socialMedia: string;
 
     constructor
@@ -25,7 +24,7 @@ export class Professional
         eyeColor: string, isRetired: boolean,nationality: string,
         oscarsNumber: number,profession: string, firstProject: string,
         lastProject:string, currentlyResidesIn:string, 
-        numberOfProductions: number, socialMedia
+        numberOfFilmographys: number, socialMedia:string
         )
         {
             this.name = name;
@@ -43,7 +42,7 @@ export class Professional
             this.firstProject = firstProject;
             this.lastProject = lastProject;
             this.currentlyResidesIn = currentlyResidesIn;
-            this.numberOfProductions = numberOfProductions;
+            this.numberOfFilmographys = numberOfFilmographys;
             this.socialMedia = socialMedia;
         }
 
@@ -57,7 +56,6 @@ export class Professional
                       "•" + this.height + "\n" + 
                       "•" + this.hairColor + "\n" + 
                       "•" + this.eyeColor + "\n" + 
-                      "•" + this.race + "\n" + 
                       "•" + this.isRetired + "\n" + 
                       "•" + this.nationality + "\n" + 
                       "•" + this.oscarsNumber + "\n" + 
@@ -65,8 +63,9 @@ export class Professional
                       "•" + this.firstProject + "\n" +
                       "•" + this.lastProject + "\n" +
                       "•" + this.currentlyResidesIn + "\n" +
-                      "•" + this.numberOfProductions + "\n" 
-                      
+                      "•" + this.numberOfFilmographys + "\n" 
+                      "•" + this.socialMedia 
+               
         console.log(valores);       
     }
 }
