@@ -252,3 +252,8 @@ elPianista.setPremiada("si");
 
 let objetoIMDB: IMDB = new IMDB([nomadland, fightClub, eternalSunshineoftheSpotlessMind, Watts25])
 
+
+let peliculas: Movie[] = [elPianista, elSecretoDeSusOjos, pulpFiction, nomadland];
+let objetoIMDB2: IMDB = new IMDB(peliculas);
+
+console.log(objetoIMDB2);
