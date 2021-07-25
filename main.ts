@@ -63,6 +63,8 @@ let actor12: Professional = new Professional("Robert Anthony", "De Niro", 77, "M
 
 //////// objetos Movie
 
+/// Rocky I
+
 let RockyI: Movie = new Movie("Rocky I", 1976, "United States", "Sports Film");
 let RockyIActores: string[] = ["Sylvester Stallone"];
 let RockyIWriters: string[] = ["Sylvester Stallone"];
@@ -80,6 +82,7 @@ RockyI.setProducer("Irwin Winkler");
 //RockyI.printall();
 
 
+//// Ragging Bull
 
 let ToroSalvaje: Movie = new Movie("Raging Bull", 1980, "United Staes", "sports drama")
 let ToroSalvajeWriters: string[] = ["Paul Schrader", "Mardik Martin"];
@@ -94,6 +97,8 @@ ToroSalvaje.setMainCharacterName("Jake la Motta");
 ToroSalvaje.setWriter(ToroSalvajeWriters);
 ToroSalvaje.setDistributor("United Artists");
 console.log(ToroSalvaje);
+
+//// American Pie
 
 
 let AmericanPie: Movie = new Movie("American Pie", 1999, "United States", "comedy")
@@ -110,6 +115,8 @@ AmericanPie.setPremiada("si");
 AmericanPie.setProducer("Universal Pictures");
 AmericanPie.setWriter(AmericanPieWriters);
 
+//// 25 Watts
+
 let Watts25: Movie = new Movie("25 Watts", 2001, "Uruguay", "drama");
 let Watts25Actores: string[] = ["Daniel Hendler", " Jorge Temponi", " Alfonso Tort"];
 let Watts25escritores: string[] = ["Juan Pablo Rebella", "Pablo Stoll"]
@@ -124,10 +131,7 @@ Watts25.setProducer("Fernando Epstein");
 Watts25.setWriter(Watts25escritores);
 console.log(Watts25);
 
-//let elPianista: Movie = new Movie();
-//let pulpFiction: Movie = new Movie();
-
-//let elSecretoDeSusOjos: Movie = new Movie();
+//////// Eternal Sunshine of the Spotless Mind
 
 let eternalSunshineoftheSpotlessMind: Movie = new Movie("Eternal Sunshine of the Spotless Mind", 2004, "United States", "drama");
 let eternalSunshineoActores: string[] = ["Jim Carrey", "Kate Winslet", "Kirsten Dunst", "Mark Ruffalo", "Elijah Wood", "Tom Wilkinson"];
@@ -144,6 +148,9 @@ eternalSunshineoftheSpotlessMind.setMainCharacterName("Jim Carrey");
 eternalSunshineoftheSpotlessMind.setProducer("Steve Golin"); // deberia ser un array, faltan Georges Bermann y Anthony Bregman
 console.log(eternalSunshineoftheSpotlessMind);
 
+
+//////// Fight Club
+
 let fightClub: Movie = new Movie("Fight Club", 1999, "United States", "Drama");
 let fightClubEscritores: string[] = ["Jim Uhls Kaufman"];
 let fightClubActores: string[] = ["Edward Norton", "Brad Pitt", "Helena Bonham Carter", "Meat Loaf", "Jared Leto"];
@@ -156,6 +163,8 @@ fightClub.setLanguage("english");
 fightClub.setMainCharacterName("Brad Pitt");
 fightClub.setProducer("Art Linson") // faltan mas, deberia ser un array
 
+
+///// Nomadland
 
 let nomadland: Movie = new Movie("Nomadland", 2020, "United States", "English");
 let nomadlandActores: string[] = ["Frances McDormand", "David Strathairn", "Linda May,", "Charlene Swankie", "Bob Wells", "Gay DeForest", "Patricia Grier"];
@@ -170,7 +179,50 @@ nomadland.setLanguage("english");
 nomadland.setMainCharacterName("Brad Pitt");
 nomadland.setProducer("Frances McDormand") // faltan mas, deberia ser un array
 
+//// Pulp Fiction
 
-let pulpFiction: Movie = new Movie("Pulp Fiction", 2020, "United States", "English");
+let pulpFiction: Movie = new Movie("Pulp Fiction", 1994, "United States", "English");
 let pulpFictionActores: string[] = ["Frances McDormand", "David Strathairn", "Linda May,", "Charlene Swankie", "Bob Wells", "Gay DeForest", "Patricia Grier"];
 let pulpFictionEscritores: string[] = ["Chloé Zhao"]
+pulpFiction.setActors(pulpFictionActores);
+pulpFiction.setWriter(pulpFictionEscritores);
+pulpFiction.setDirector("Quentin Tarantino");
+pulpFiction.setLanguage("English");
+pulpFiction.setMainCharacterName("John Travolta")
+pulpFiction.setPlatform("Starz");
+pulpFiction.setDistributor("Miramax");
+pulpFiction.setProducer("Danny DeVito");
+pulpFiction.setPremiada("si");
+
+
+///// El Secreto de sus Ojos
+
+let elSecretoDeSusOjos: Movie = new Movie("El Secreto de sus Ojos", 2009, "Argentina", "Spanish");
+let elSecretoActores: string[] = ["Ricardo Darín", "Soledad Villamil", "Pablo Rago", "Javier Godino", "Guillermo Francella"];
+let elSecretoEscritores: string[] = ["Juan José Campanella", "Eduardo Sacheri"];
+
+elSecretoDeSusOjos.setActors(elSecretoActores);
+elSecretoDeSusOjos.setWriter(elSecretoEscritores);
+elSecretoDeSusOjos.setDirector("Juan José Campanella");
+elSecretoDeSusOjos.setMainCharacterName("Ricardo Darín");
+elSecretoDeSusOjos.setPlatform("HBO");
+elSecretoDeSusOjos.setDistributor("Distribution Company");
+elSecretoDeSusOjos.setProducer("Juan José Campanella");
+elSecretoDeSusOjos.setPremiada("si");
+
+
+//// El Pianista
+
+let elPianista: Movie = new Movie("El Pianista", 2002, "United States", "English");
+let elPianistaActores: string[] = [];
+let elPianistaWriters: string[] = [];
+elPianista.setActors(elPianistaActores);
+elPianista.setWriter(elPianistaWriters);
+elPianista.setPlatform("Amazon Prime Video");
+elPianista.setMainCharacterName("Władysław 'Władek' Szpilman");
+elPianista.setPlatform("Netflix");
+elPianista.setDistributor("Universal");
+elPianista.setProducer("Roman Polanski")
+elPianista.setPremiada("si");
+
+
