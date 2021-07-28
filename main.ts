@@ -280,7 +280,8 @@ let ficheroJSON:string = fs.readFileSync("./imdbBBDD.json",{encoding: 'utf8'});
 
 let objetoJSONIMDB: IMDB = new IMDB(JSON.parse(ficheroJSON));
 
+////****CREAR FICHERO CON BASE DE DATOS *****////
 
-
+objetoIMDB2.escribirEnFicheroJSON("miSuperFichero.json");
 
 

@@ -13,8 +13,8 @@ export class IMDB
 
     escribirEnFicheroJSON(nombreFichero: string)
     {
-        let jsonParametro:string = JSON.stringify(nombreFichero, null, 2);
+        let jsonParametro:string = JSON.stringify(this.peliculas, null, 2);
 
-        fs.writeFileSync("fichero.json", jsonParametro);
+        fs.writeFileSync(nombreFichero, jsonParametro);
     }
 }
