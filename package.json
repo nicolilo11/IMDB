@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nicolilo11/IMDB/issues"
   },
-  "homepage": "https://github.com/nicolilo11/IMDB#readme"
+  "homepage": "https://github.com/nicolilo11/IMDB#readme",
+  "devDependencies": {
+    "@types/node": "^16.4.5"
+  }
 }

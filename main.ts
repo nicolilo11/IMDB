@@ -257,3 +257,18 @@ let peliculas: Movie[] = [elPianista, elSecretoDeSusOjos, pulpFiction, nomadland
 let objetoIMDB2: IMDB = new IMDB(peliculas);
 
 console.log(objetoIMDB2);
+
+
+////****CONVERTIR A JSON OBJETO TIPO IMDB****////
+
+let jsonIMDB:string = JSON.stringify(objetoIMDB, null, 2);
+
+console.log(jsonIMDB);
+
+// var fs = require("fs");
+import * as fs from "fs";
+
+fs.writeFileSync("imdbBBDD.json", jsonIMDB)
+
+
+
