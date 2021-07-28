@@ -17,4 +17,11 @@ export class IMDB
 
         fs.writeFileSync(nombreFichero, jsonParametro);
     }
+
+    obtenerInstanciaIMDB(nombreFichero: string):IMDB
+    {
+        let ficheroJson:string = fs.readFileSync(nombreFichero, {encoding:'utf-8'});
+        let nuevoObjetoJson: IMDB = new IMDB(JSON.parse(ficheroJson));
+        return nuevoObjetoJson;
+    }
 }
