@@ -1,6 +1,9 @@
 import { Professional } from "./claseProfesional";
 import { Movie } from "./movie";
 import { IMDB } from './claseIMDB';
+import * as fs from "fs";
+import { parse } from "path/posix";
+import { StringDecoder } from "string_decoder";
 
 ///*****OBJETOS CLASE PROFESSIONAL*******///
 
@@ -113,8 +116,8 @@ ToroSalvaje.setPlatform("Amazon Prime Video");
 ToroSalvaje.setMainCharacterName("Jake la Motta");
 ToroSalvaje.setWriter(ToroSalvajeWriters);
 ToroSalvaje.setDistributor("United Artists");
-console.log(ToroSalvaje);
 
+// console.log(ToroSalvaje);
 //// American Pie
 
 
@@ -146,7 +149,9 @@ Watts25.setPlatform("Amazon Prime Video");
 Watts25.setPremiada("si");
 Watts25.setProducer("Fernando Epstein");
 Watts25.setWriter(Watts25escritores);
-console.log(Watts25);
+
+
+// console.log(Watts25);
 
 //////// Eternal Sunshine of the Spotless Mind
 
@@ -163,7 +168,8 @@ eternalSunshineoftheSpotlessMind.setDistributor("Focus Features");
 eternalSunshineoftheSpotlessMind.setPlatform("Amazon Prime Video");
 eternalSunshineoftheSpotlessMind.setMainCharacterName("Jim Carrey");
 eternalSunshineoftheSpotlessMind.setProducer("Steve Golin"); // deberia ser un array, faltan Georges Bermann y Anthony Bregman
-console.log(eternalSunshineoftheSpotlessMind);
+
+// console.log(eternalSunshineoftheSpotlessMind);
 
 
 //////// Fight Club
@@ -254,21 +260,27 @@ let objetoIMDB: IMDB = new IMDB([nomadland, fightClub, eternalSunshineoftheSpotl
 
 
 let peliculas: Movie[] = [elPianista, elSecretoDeSusOjos, pulpFiction, nomadland];
-let objetoIMDB2: IMDB = new IMDB(peliculas);
 
-console.log(objetoIMDB2);
+let objetoIMDB2: IMDB = new IMDB(peliculas);
 
 
 ////****CONVERTIR A JSON OBJETO TIPO IMDB****////
 
 let jsonIMDB:string = JSON.stringify(objetoIMDB, null, 2);
 
-console.log(jsonIMDB);
 
-// var fs = require("fs");
-import * as fs from "fs";
+////****GUARDAR OBJETO EN FIHERO JSON****////;
 
 fs.writeFileSync("imdbBBDD.json", jsonIMDB)
+
+
+////****ALMACENAR FICHERO EN INSTANCIA****////
+
+let ficheroJSON:string = fs.readFileSync("./imdbBBDD.json",{encoding: 'utf8'});
+
+let objetoJSONIMDB: IMDB = new IMDB(JSON.parse(ficheroJSON));
+
+
 
 
 
