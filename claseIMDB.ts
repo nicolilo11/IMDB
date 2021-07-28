@@ -1,5 +1,6 @@
 import { Movie } from "./movie";
 import { Professional } from './claseProfesional';
+import * as fs from 'fs';
 
 export class IMDB
 {
@@ -8,5 +9,12 @@ export class IMDB
     constructor (peliculas: Movie[])
     {
         this.peliculas = peliculas;
+    }
+
+    escribirEnFicheroJSON(nombreFichero: string)
+    {
+        let jsonParametro:string = JSON.stringify(nombreFichero, null, 2);
+
+        fs.writeFileSync("fichero.json", jsonParametro);
     }
 }
