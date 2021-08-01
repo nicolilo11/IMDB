@@ -1,0 +1,95 @@
+[
+  {
+    "title": "El Pianista",
+    "releaseYear": 2002,
+    "actors": [],
+    "nationality": "United States",
+    "director": "",
+    "writer": [],
+    "language": "",
+    "platform": "Netflix",
+    "isMCU": "",
+    "mainCharacterName": "Władysław 'Władek' Szpilman",
+    "producer": "Roman Polanski",
+    "distributor": "Universal",
+    "genre": "English",
+    "premiada": "si"
+  },
+  {
+    "title": "El Secreto de sus Ojos",
+    "releaseYear": 2009,
+    "actors": [
+      "Ricardo Darín",
+      "Soledad Villamil",
+      "Pablo Rago",
+      "Javier Godino",
+      "Guillermo Francella"
+    ],
+    "nationality": "Argentina",
+    "director": "Juan José Campanella",
+    "writer": [
+      "Juan José Campanella",
+      "Eduardo Sacheri"
+    ],
+    "language": "",
+    "platform": "HBO",
+    "isMCU": "",
+    "mainCharacterName": "Ricardo Darín",
+    "producer": "Juan José Campanella",
+    "distributor": "Distribution Company",
+    "genre": "Spanish",
+    "premiada": "si"
+  },
+  {
+    "title": "Pulp Fiction",
+    "releaseYear": 1994,
+    "actors": [
+      "Frances McDormand",
+      "David Strathairn",
+      "Linda May,",
+      "Charlene Swankie",
+      "Bob Wells",
+      "Gay DeForest",
+      "Patricia Grier"
+    ],
+    "nationality": "United States",
+    "director": "Quentin Tarantino",
+    "writer": [
+      "Chloé Zhao"
+    ],
+    "language": "English",
+    "platform": "Starz",
+    "isMCU": "",
+    "mainCharacterName": "John Travolta",
+    "producer": "Danny DeVito",
+    "distributor": "Miramax",
+    "genre": "English",
+    "premiada": "si"
+  },
+  {
+    "title": "Nomadland",
+    "releaseYear": 2020,
+    "actors": [
+      "Frances McDormand",
+      "David Strathairn",
+      "Linda May,",
+      "Charlene Swankie",
+      "Bob Wells",
+      "Gay DeForest",
+      "Patricia Grier"
+    ],
+    "nationality": "United States",
+    "director": "Chloé Zhao",
+    "writer": [
+      "Chloé Zhao"
+    ],
+    "language": "english",
+    "platform": "Amazon Prime Video",
+    "isMCU": "",
+    "mainCharacterName": "Brad Pitt",
+    "producer": "Frances McDormand",
+    "distributor": "Searchlight Pictures",
+    "genre": "English",
+    "premiada": "si"
+  }
+]

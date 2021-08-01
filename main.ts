@@ -249,15 +249,9 @@ elPianista.setDistributor("Universal");
 elPianista.setProducer("Roman Polanski")
 elPianista.setPremiada("si");
 
-
-
-
-
-
 ///****IMPLEMENTACION DE CLASE IMDB****///
 
 let objetoIMDB: IMDB = new IMDB([nomadland, fightClub, eternalSunshineoftheSpotlessMind, Watts25])
-
 
 let peliculas: Movie[] = [elPianista, elSecretoDeSusOjos, pulpFiction, nomadland];
 
@@ -278,7 +272,7 @@ fs.writeFileSync("imdbBBDD.json", jsonIMDB)
 
 let ficheroJSON:string = fs.readFileSync("./imdbBBDD.json",{encoding: 'utf8'});
 
-let objetoJSONIMDB: IMDB = new IMDB(JSON.parse(ficheroJSON));
+JSON.parse(ficheroJSON);
 
 ////****CREAR FICHERO CON BASE DE DATOS *****////
 
